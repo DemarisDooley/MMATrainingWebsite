@@ -1,0 +1,46 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: demaris
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: gloryyouthtest
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: gloryyouthserverless
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  stage: dev
+
+plugins:
+  - serverless-offline
+
+functions:
+  createProfile:
+    handler: backend/src/handlers/profile.createProfile
+    events:
+      - http:
+          path: profile/{userId}
+          method: post
+      - cognitoUserPool:
+          pool: us-east-1_ohvGyWSZf
+          trigger: PostConfirmation
+
+  getProfile:
+      handler: backend/src/handlers/profile.getProfile
+      events:
+        - http:
+            path: profile/{userId}
+            method: get
+
+  updateProfile:
+      handler: backend/src/handlers/profile.updateProfile
+      events:
+        - http:
+            path: profile/{userId}
+            method: put
+
+  deleteProfile:
+      handler: backend/src/handlers/profile.deleteProfile
+      events:
+        - http:
+            path: profile/{userId}
+            method: delete

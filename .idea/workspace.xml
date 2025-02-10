@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6859e779-b094-4af9-8031-f7cb84768f54" name="Changes" comment="initial commit" />
+    <list default="true" id="6859e779-b094-4af9-8031-f7cb84768f54" name="Changes" comment="created frontend and backend folders">
+      <change afterPath="$PROJECT_DIR$/frontend/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.serverless/meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/meta.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/users/getUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/handlers/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/users/updateUser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/Devanta-Frencher-246140.webp" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/Devanta-Frencher-246140.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/Logo-107623.webp" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/Logo-107623.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/logged_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/logged_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/logged_out.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +36,33 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DemarisDooley&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DemarisDooley/MMATrainingWebsite&quot;,
+    &quot;accountId&quot;: &quot;b5f81066-fcff-490c-a6c8-cd052e97a090&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2rEmIgvrgXi3V1EQ0UT2PC3qlpy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -35,16 +75,30 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "reorganizingProject",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ak/IdeaProjects/MMATrainingWebsite/frontend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/ak/IdeaProjects/MMATrainingWebsite/frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/app" />
+      <recent name="$PROJECT_DIR$/frontend/src" />
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/backend/src/handlers" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,6 +116,8 @@
       <option name="presentableId" value="Default" />
       <updated>1736132531326</updated>
       <workItem from="1736132532283" duration="1239000" />
+      <workItem from="1739127459078" duration="650000" />
+      <workItem from="1739133823119" duration="11480000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -79,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736133700564</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changed redirect_uri's from http github.io to cloudfront url(https://dtp00uv8xgvxu.cloudfront.net)">
+      <option name="closed" value="true" />
+      <created>1736487667708</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736487667708</updated>
+    </task>
+    <task id="LOCAL-00004" summary="created frontend and backend folders">
+      <option name="closed" value="true" />
+      <created>1736744184024</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736744184024</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +159,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="changed redirect_uri's from http github.io to cloudfront url(https://dtp00uv8xgvxu.cloudfront.net)" />
+    <MESSAGE value="created frontend and backend folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="created frontend and backend folders" />
   </component>
 </project>
