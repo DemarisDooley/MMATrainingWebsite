@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
-import {RouterOutlet} from "@angular/router";
+import {IndexComponent} from "./index/index.component";
+import {LoggedInComponent} from "./logged-in/logged-in.component";
+import {LoggedOutComponent} from "./logged-out/logged-out.component";
+import {routes} from "./app.routes";
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IndexComponent,
+    LoggedInComponent,
+    LoggedOutComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
-    RouterOutlet
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

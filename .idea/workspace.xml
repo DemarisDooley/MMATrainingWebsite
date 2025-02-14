@@ -4,28 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6859e779-b094-4af9-8031-f7cb84768f54" name="Changes" comment="created frontend and backend folders">
-      <change afterPath="$PROJECT_DIR$/frontend/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="6859e779-b094-4af9-8031-f7cb84768f54" name="Changes" comment="added angular. reorganized into frontend and backend folders. added user profile lambda functions">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.serverless/meta.json" beforeDir="false" afterPath="$PROJECT_DIR$/.serverless/meta.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/users/getUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/handlers/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/users/updateUser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/Devanta-Frencher-246140.webp" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/Devanta-Frencher-246140.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/Logo-107623.webp" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/Logo-107623.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/logged_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/logged_in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/logged_out.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.serverless/meta.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/index/index.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/index/index.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/logged-in/logged-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/logged-in/logged-in.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/logged-out/logged-out.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/logged-out/logged-out.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/serverless.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +64,10 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "reorganizingProject",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ak/IdeaProjects/MMATrainingWebsite/frontend",
+    "last_opened_file_path": "/Users/ak/IdeaProjects/MMATrainingWebsite/frontend/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,14 +79,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src" />
+      <recent name="$PROJECT_DIR$/.idea" />
+      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/frontend/src/app" />
       <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/backend/src/handlers" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -117,7 +110,7 @@
       <updated>1736132531326</updated>
       <workItem from="1736132532283" duration="1239000" />
       <workItem from="1739127459078" duration="650000" />
-      <workItem from="1739133823119" duration="11480000" />
+      <workItem from="1739133823119" duration="18164000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -151,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736744184024</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added angular. reorganized into frontend and backend folders. added user profile lambda functions">
+      <option name="closed" value="true" />
+      <created>1739201463943</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739201463943</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +162,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="changed redirect_uri's from http github.io to cloudfront url(https://dtp00uv8xgvxu.cloudfront.net)" />
     <MESSAGE value="created frontend and backend folders" />
-    <option name="LAST_COMMIT_MESSAGE" value="created frontend and backend folders" />
+    <MESSAGE value="added angular. reorganized into frontend and backend folders. added user profile lambda functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added angular. reorganized into frontend and backend folders. added user profile lambda functions" />
   </component>
 </project>
